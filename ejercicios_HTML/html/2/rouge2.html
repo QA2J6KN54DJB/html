@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Ejemplo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
+        .caja {
+            width: 60%;
+            height: 80%;
+            background-color: #f0f0f0;
+            border: 2px solid gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .cajita {
+            width: 90%;
+            height: 60px;
+            border: 1px solid gray;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+        }
+
+        .cajita div {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja">
+        <div class="cajita">
+            <div>ANDONI</div>
+            <div>PSOE</div>
+            <div>PP</div>
+            <div>VOX</div>
+            <div>APOSTAR</div>
+        </div>
+    </div>
+</body>
+</html>
